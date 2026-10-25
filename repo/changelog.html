@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changelog — Galinha Assada &amp; SeguroTurbo</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f6f4; --fg:#1c1b1a; --card:#fff;
+           --borda:#dcdcd6; --destaque:#0a7d55; --suave:#6b6b66; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141413; --fg:#ecebe7; --card:#1e1e1c; --borda:#33332f;
+             --destaque:#4ed09a; --suave:#9c9c94; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:2.2rem 1.2rem 3rem; background:var(--bg); color:var(--fg);
+          font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  header { margin:0 0 2rem; }
+  h1 { font-size:1.9rem; margin:0 0 .3rem; letter-spacing:-.02em; }
+  .sub { color:var(--suave); margin:0; }
+  nav { margin:1rem 0 0; display:flex; gap:1rem; flex-wrap:wrap; }
+  nav a { color:var(--destaque); text-decoration:none; }
+  nav a:hover { text-decoration:underline; }
+  .card { background:var(--card); border:1px solid var(--borda); border-radius:14px;
+           margin:0 0 1.2rem; overflow:hidden; }
+  .card-head { padding:1rem 1.2rem .6rem; display:flex; align-items:baseline; gap:.8rem; }
+  .card-head h2 { margin:0; font-size:1.1rem; }
+  .vcode { display:inline-block; padding:.1rem .5rem; border-radius:999px;
+            border:1px solid var(--borda); color:var(--suave); font-size:.9rem; }
+  .lista { margin:0; padding:0 1.2rem 1.1rem 2.2rem; display:grid; gap:.4rem; }
+  .lista li { line-height:1.6; }
+  .vazio { color:var(--suave); }
+  footer { margin:2.4rem 0 0; color:var(--suave); font-size:.95rem; }
+  footer a { color:var(--destaque); text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Changelog</h1>
+    <p class="sub">Galinha Assada &amp; SeguroTurbo — histórico de versões</p>
+    <nav>
+      <a href="https://cleberleonheart-maker.github.io/seguraturbo-fdroid/">← Voltar ao repositório F-Droid</a>
+      <a href="https://github.com/cleberleonheart-maker/Seguroturbo">Código-fonte</a>
+    </nav>
+  </header>
+
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">38</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Verificador de senhas vazadas (offline): compara o hash SHA-1 da senha com um dicionário local, sem enviar nada pela rede.</li>
+        <li>Comparação com médias de referência no Benchmark: mostra a classe (Baixo/Médio/Alto/Topo) em relação às faixas de dispositivos.</li>
+        <li>Teste de consumo de bateria no Benchmark: mede a drenagem em intervalos para estimativa de uso.</li>
+        <li>Turbo agendado: ativa o Modo Jogo automaticamente em horários definidos.</li>
+        <li>Perfil por jogo: salva configuração por app (desempenho, Não Perturbe, trava de tela e barra flutuante).</li>
+        <li>Barra flutuante com FPS e velocidade de rede em tempo real.</li>
+        <li>Co-instalação debug/release permitida.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">37</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Perfil de risco por app: a auditoria de permissões classifica cada app em alto, médio ou baixo risco cruzando internet e permissões sensíveis.</li>
+        <li>Tema AMOLED: modo escuro com preto puro para economizar bateria em telas OLED.</li>
+        <li>Filtro de alertas por categoria na tela de Segurança, com contagem por tipo.</li>
+        <li>Detecção (somente leitura) de aparelho gerenciado e perfil de trabalho.</li>
+        <li>Atalhos no ícone (toque longo): Escanear, Limpar RAM e Testar rede.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">35</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Inventário exportável: na auditoria de permissões, um botão gera um CSV com todos os apps visíveis e as permissões sensíveis que cada um tem. Tudo local, sem enviar dados.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">34</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Detector de stalkerware: a varredura agora procura apps de vigilância conhecidos e combinações incomuns de permissões (SMS + localização + contatos/microfone), com botão para abrir os detalhes e desinstalar. Tudo local, sem enviar dados para fora.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">33</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Perfis de uso: presets Padrão, Gamer, Casual, Bateria e Segurança máxima que aplicam várias configurações de uma vez. Tudo local, sem conta nem nuvem.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">32</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Silenciar só mídia: baixa o volume de músicas e vídeos no Modo Jogo, sem afetar chamadas e alarmes.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">31</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Bloqueio de tela (screen pinning): fixe o jogo na tela ao abri-lo, evitando toques acidentais.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">30</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Correção: adiciona distributionSha256Sum no Gradle Wrapper (verificação da distribuição do Gradle).</li>
+        <li>Infra: adição de FUNDING.yml no repositório.</li>
+        <li>Materiais para F-Droid: ícone/small tweaks e preparação para submissão.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <header class="card-head">
+        <h2>Versão <span class="vcode">29</span></h2>
+      </header>
+      <ul class="lista">
+        <li>Correções de polish: unidade do teste de toque localizada e remoção de textos não usados (APK menor).</li>
+      </ul>
+    </section>
+
+  <footer>
+    Gerado a partir dos metadados Fastlane · <a href="https://github.com/cleberleonheart-maker/Seguroturbo">github.com/cleberleonheart-maker/Seguroturbo</a>
+  </footer>
+</main>
+</body>
+</html>
